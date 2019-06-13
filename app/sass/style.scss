@@ -1,0 +1,19 @@
+//  Components
+@import 'components/_vendor';
+@import 'components/_fonts';
+@import 'components/_variables';
+@import 'components/_scaffolding';
+
+
+//  Page-section
+@import 'page/_header';
+@import 'page/_search';
+@import 'page/_navigation';
+@import 'page/_main';
+@import 'page/_liked';
+@import 'page/_interesting';
+@import 'page/_tabs';
+@import 'page/_content';
+@import 'page/_gallery';
+@import 'page/_right-block';
+@import 'page/_humburger';

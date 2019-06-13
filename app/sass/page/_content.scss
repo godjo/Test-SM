@@ -1,0 +1,48 @@
+.content {
+	padding-right: 21px;
+
+	@media (max-width: 767px) {
+		padding-right: 15px;
+		max-width: none;
+	}
+
+	&__title {
+		font-size: 35px;
+		font-weight: 700;
+		line-height: 47px;
+		word-spacing: 2px;
+		color: $black;
+
+		@media (max-width: 767px) {
+			text-align: center;
+			font-size: 25px;
+			line-height: 30px;
+		}
+
+		@media (min-width: 768px) and (max-width: 1199px) {
+			font-size: 25px;
+			line-height: 30px;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		color: $dark-gray;
+
+		@media (min-width: 768px) and (max-width: 1199px) {
+			font-size: 12px;
+		}
+
+		&--header {
+			margin-top: 7px;
+			word-spacing: 2px;
+		}
+
+		&--footer {
+			margin-top: 25px;
+			margin-bottom: 30px;
+		}
+	}
+}

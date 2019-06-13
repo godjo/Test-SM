@@ -1,0 +1,119 @@
+.navigation {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		width: 30%;
+
+		text-align: center;
+		@media (min-width: 0px) and (max-width: 767px) {
+			width: 100%;
+		}
+
+		&:last-of-type {
+			width: 102%;
+			text-align: left;
+
+			@media (max-width: 767px) {
+				width: 100%;
+				text-align: center;
+			}
+		}
+
+
+	}
+
+	&__link {
+		width: 100%;
+		display: inline-block;
+
+		padding: 4px 0;
+
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $white;
+
+		@media (max-width: 767px) {
+			padding: 7px 0;
+			color: $white;
+		}
+
+		@media (min-width: 768px) and (max-width: 991px) {
+			padding: 0 10px;
+
+			font-size: 12px;
+		}
+
+		@media (min-width: 992px) and (max-width: 1199px) {
+			padding: 0 15px;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		&--main {
+			background-color: $blue;
+
+			&:hover {
+				background-color: lighten($blue, 20%);
+			}
+		}
+
+		&--movie {
+			background-color: $green;
+
+			&:hover {
+				background-color: lighten($green, 20%);
+			}
+		}
+
+		&--score {
+			background-color: $dark-blue;
+
+			&:hover {
+				background-color: lighten($dark-blue, 20%);
+			}
+		}
+
+		&--projects {
+			background-color: $blue;
+
+			&:hover {
+				background-color: lighten($blue, 20%);
+			}
+		}
+
+		&--news {
+			background-color: $orange;
+
+			&:hover {
+				background-color: lighten($orange, 20%);
+			}
+		}
+
+		&--archive {
+			background-color: $red;
+
+			&:hover {
+				background-color: lighten($red, 20%);
+			}
+		}
+
+		&--contacts {
+			padding-left: 16px;
+
+			background-color: $gray;
+
+			&:hover {
+				background-color: lighten($gray, 20%);
+			}
+		}
+
+	}
+}

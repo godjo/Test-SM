@@ -1,0 +1,20 @@
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+    );
+
+$container-max-widths: (
+	sm: 576px,
+	md: 700px,
+	lg: 850px,
+	xl: 1054px
+);
+
+@import "bootstrap";
+@import "main.scss";    //magnific-popup
+
+
+

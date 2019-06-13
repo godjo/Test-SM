@@ -1,0 +1,93 @@
+.header {
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		padding-top: 25px;
+		padding-bottom: 22px;
+
+		@media (max-width: 767px) {
+			padding: 0;
+
+			flex-direction: column;
+		}
+	}
+
+	&__logo {
+		@media (min-width: 768px) and (max-width: 1199px) {
+			width: 150px;
+			height: 50px;
+		}
+		&-wrap {
+			@media (max-width: 767px) {
+				margin: 25px auto;
+
+			}
+		}
+	}
+
+	&__links {
+		display: flex;
+
+		@media (max-width: 767px) {
+			position: relative;
+			z-index: 2;
+		}
+	}
+
+	&__item {
+		padding-right: 5px;
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	&__link {
+		display: block;
+
+		min-width: 38px;
+		min-height: 36px;
+		background-color: $black;
+
+		@media (min-width: 768px) and (max-width: 1199px) {
+			min-width: 25px;
+			min-height: 25px;
+
+			background-size: 40%;
+		}
+	}
+
+	&__link--one {
+		background-color: $orange;
+		background-image: url('../img/Layer_15.png');
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&:hover {
+			background-color: lighten($orange, 20%);
+		}
+	}
+	&__link--facebook {
+		background-color: $dark-blue;
+		background-image: url('../img/Layer_16.png');
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&:hover {
+			background-color: lighten($dark-blue, 20%);
+		}
+	}
+
+	&__link--twitter {
+		background-color: $blue;
+		background-image: url('../img/Layer_17.png');
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&:hover {
+			background-color: lighten($blue, 20%);
+		}
+	}
+}
